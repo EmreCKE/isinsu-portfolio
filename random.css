@@ -1,0 +1,79 @@
+/* Rastgele Konumlandırılmış Projeler */
+.random-projects {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* İçerik için yeterli alan */
+    background-color: #fdfbf1; /* Hafif krem arka plan */
+    overflow: hidden;
+}
+
+/* Proje Kartı */
+.project-item {
+    position: absolute;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Proje Numaraları */
+.project-item p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+/* Proje Görselleri */
+.project-item img {
+    display: block; /* Görünürlüğü garanti eder */
+    width: 100%; /* Varsayılan genişlik */
+    max-width: 400px; /* Görsellerin maksimum genişliği */
+    min-width: 300px; /* Görsellerin minimum genişliği */
+    height: auto; /* Oran korunsun */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Efekti */
+.project-item a:hover img {
+    transform: scale(1.1); /* Hover büyüme efekti */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Sabit Konumlar - Masaüstü */
+.project-item:nth-child(1) { top: 5%; left: 10%; }
+.project-item:nth-child(2) { top: 15%; right: 15%; }
+.project-item:nth-child(3) { top: 30%; left: 45%; }
+.project-item:nth-child(4) { top: 45%; right: 10%; }
+.project-item:nth-child(5) { top: 31%; left: 20%; }
+.project-item:nth-child(6) { top: 65%; right: 30%; }
+.project-item:nth-child(7) { top: 60%; left: 37%; }
+
+/* Mobil Versiyon İçin Düzenleme */
+@media (max-width: 768px) {
+    .random-projects {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .project-item {
+        position: relative;
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    /* Mobilde Alternatif Konumlandırma */
+    .project-item:nth-child(1) { top: 5%; left: -20%; }
+    .project-item:nth-child(2) { top: 15%; left: 0%; }
+    .project-item:nth-child(3) { top: 30%; left: 20%; }
+    .project-item:nth-child(4) { top: 45%; left: -15%; }
+    .project-item:nth-child(5) { top: 31%; left: 8%; }
+    .project-item:nth-child(6) { top: 65%; left: 15%; }
+    .project-item:nth-child(7) { top: 60%; left: 17%; }
+    
+    .project-item img {
+        width: 250px; /* Mobilde sabit genişlik */
+    }
+}
