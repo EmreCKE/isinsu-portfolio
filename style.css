@@ -213,7 +213,7 @@ body {
 
     .landing-logo img {
         height: 270px;
-        transform: translateY(-100px);
+        transform: translateY(100px);
     }
 
     .footer-title {
