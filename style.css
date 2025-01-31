@@ -214,12 +214,12 @@ body {
     }
 
     .landing-logo img {
-        height: 200px;
-        transform: translateY(100px);
+        height: 150px;
+        transform: translateY(50px);
     }
 
     .footer-title {
-        font-size: 36px;
+        font-size: 20px;
     }
 
     .main-title {
@@ -227,8 +227,17 @@ body {
         font-family: 'Roslindale Deck Narrow Regular';
         padding: 1rem;
     } 
-    .description{
-        font-size: 20px;
-        padding: 20px;
+  
+.description {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 16px;
+    max-width: 350px;
+    line-height: 1.6;
+}
+
+    #footer p{
+        font-size: 16px;
     }
+    
 }

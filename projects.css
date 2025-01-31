@@ -1,7 +1,4 @@
-#projects h1 {
-    font-weight: bold;
-    font-size: 50px;
-}
+
 
 .project-grid {
     display: grid;
@@ -44,8 +41,19 @@
 @media (max-width: 768px) {
 
     .project-grid {
-        grid-template-columns: repeat(1, minmax(400px, 1fr));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+    .project-card {
+        height: 40vh;
+        margin: 0 1rem;
+    }
+    .project-img img{
+        height: 200px;
     }
 
+.project-grid{
+    gap: 20px;
+    padding: 20px;
+}
 }
 
