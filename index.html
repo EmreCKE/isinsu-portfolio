@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="random.css">
-    <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="random.css">
+    <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="loading.css">
-    <title>Margot Priolet | Portfolio</title>
+    <title>Isinsu Avanoglu | Portfolio</title>
 </head>
 
 <body>
@@ -23,14 +23,13 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-left">
-            <div>Isinsu Ilayda Avanoglu</div>
-            <div style="font-size: 12px;">Freelance Make-up Artist</div>
+            <a id="nav-logo" href="#"><img src="img/logo-cream.png" alt=""></a>
         </div>
 
         <!-- Normal Menü -->
         <div class="nav-right">
-            <a href="#">WORK <sup>(7)</sup></a>
-            <a href="#">ARCHIVES <sup>(9)</sup></a>
+            <a href="#projects">Projects <sup>(7)</sup></a>
+            <a href="#footer">Contact</a>
         </div>
 
         <!-- Hamburger Menü (Mobil) -->
@@ -42,76 +41,103 @@
 
         <!-- Açılan Mobil Menü -->
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#">WORK <sup>(7)</sup></a>
-            <a href="#">ARCHIVES <sup>(9)</sup></a>
+            <a href="#projects">Projects <sup>(7)</sup></a>
+            <a href="#footer">Contact</a>
         </div>
     </nav>
 
     <!-- Ana İçerik -->
-    <div class="container">
-        <div class="main-title">Isinsu Avanoglu</div>
-        <div class="description">
-            I'M A FREELANCE MAKE-UP ARTIST BASED IN PARIS WORKING FOR FASHION AND BEAUTY BRANDS
+    <section class="landing">
+            <div class="landing-logo"><img src="img/logo.svg" alt=""></div>
+            <div class="landing-text">
+                <div class="main-title">Isinsu Ilayda Avanoglu</div>
+                <div class="description">
+                    I’m a Turkish designer based in Milan, constantly curious and always looking for new experiences. I love
+                    creating innovative solutions that have a positive impact on people’s lives.
+                </div>
+            </div>
+    </section>
+
+
+    <section class="random-projects">
+        <div class="project-item">
+            <a href="#">
+                <img src="img/caim-red.png" alt="Project 1">
+            </a>
         </div>
-        <div class="email">
-            <a href="mailto:work@margotpriolet.com">isinsuavanoglu@gmail.com</a>
+
+        <div class="project-item">
+            <a href="#">
+                <img src="img/haze-red.png" alt="Project 2">
+            </a>
         </div>
-    </div>
 
+        <div class="project-item">
+            <a href="#">
+                <img src="img/hopey-red.png" alt="Project 3">
+            </a>
+        </div>
 
+        <div class="project-item">
+            <a href="#">
+                <img src="img/balion-red.png" alt="Project 4">
+            </a>
+        </div>
 
-<!-- Rastgele Konumlandırılmış Projeler Bölümü -->
-<section class="random-projects">
-    <div class="project-item">
-        <p class="project-number">00(1)</p>
-        <a href="https://example.com/project1">
-            <img src="img/table-project.png" alt="Project 1">
-        </a>
-    </div>
+        <div class="project-item">
+            <a href="#">
+                <img src="img/slice-red.png" alt="Project 5">
+            </a>
+        </div>
 
-    <div class="project-item">
-        <p class="project-number">00(2)</p>
-        <a href="https://example.com/project2">
-            <img src="img/robot-project.png" alt="Project 2">
-        </a>
-    </div>
+        <div class="project-item">
+            <a href="#">
+                <img src="img/uno-red.png" alt="Project 6">
+            </a>
+        </div>
 
-    <div class="project-item">
-        <p class="project-number">00(3)</p>
-        <a href="https://example.com/project3">
-            <img src="img/robot-project.png" alt="Project 3">
-        </a>
-    </div>
+        <div class="project-item">
+            <a href="#">
+                <img src="img/xnock-red.png" alt="Project 7">
+            </a>
+        </div>
+        <div class="project-item">
+            <a href="https://example.com/project7">
+                <img src="img/solsta-red.png" alt="Project 7">
+            </a>
+        </div>
+    </section>
 
-    <div class="project-item">
-        <p class="project-number">00(4)</p>
-        <a href="https://example.com/project4">
-            <img src="img/table-project.png" alt="Project 4">
-        </a>
-    </div>
-
-    <div class="project-item">
-        <p class="project-number">00(5)</p>
-        <a href="https://example.com/project5">
-            <img src="img/robot-project.png" alt="Project 5">
-        </a>
-    </div>
-
-    <div class="project-item">
-        <p class="project-number">00(6)</p>
-        <a href="https://example.com/project6">
-            <img src="img/table-project.png" alt="Project 6">
-        </a>
-    </div>
-
-    <div class="project-item">
-        <p class="project-number">00(7)</p>
-        <a href="https://example.com/project7">
-            <img src="img/robot-project.png"Project 7">
-        </a>
-    </div>
-</section>
-<script src="script.js"></script>
+    <section id="projects">
+        <div class="project-grid">
+            <div id="project-1" class="project-card">
+                <h1 class="project-title">HOPEY</h1>
+                <a class="project-img" href="#" ><img src="img/hopey-foreground.png" alt=""></a>
+                <div class="project-details">
+                    <p class="project-year">2025</p>
+                </div>
+            </div>
+            <div id="project-3" class="project-card">
+                <h1 class="project-title">HAZE</h1>
+                <a class="project-img" href="#" ><img src="img/haze-foreground.png" alt=""></a>
+                <div class="project-details">
+                    <p class="project-year">2025</p>
+                </div>
+            </div>
+            <div id="project-2" class="project-card">
+                <h1 class="project-title">CAIM</h1>
+                <a class="project-img" href="#" ><img src="img/caim-foreground.png" alt=""></a>
+                <div class="project-details">
+                    <p class="project-year">2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h2>Contact</h2>
+        <p>isinsuilaydaavanoglu@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

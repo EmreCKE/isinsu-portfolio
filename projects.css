@@ -1,0 +1,51 @@
+#projects h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    gap: 50px;
+    padding: 40px;
+    margin: auto;
+}
+
+.project-card {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+}
+#project-1{
+    background: url('img/hopey-background.jpeg')no-repeat center center/cover;
+}
+#project-2{
+    background: url('img/caim-background.png')no-repeat center center/cover;
+}
+#project-3{
+    background: url('img/haze-background.png')no-repeat center center/cover;
+}
+
+.project-title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.project-img{
+    border-radius: 50px;
+}
+.project-img img{
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+
+    .project-grid {
+        grid-template-columns: repeat(1, minmax(400px, 1fr));
+    }
+
+}
+

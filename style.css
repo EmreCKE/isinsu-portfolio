@@ -2,12 +2,18 @@
     --white: #fffeef;
     --red: #f20e0e;
 }
-
+@font-face {
+    font-family: 'Roslindale Deck Narrow Regular';
+    font-style: normal;
+    font-weight: normal;
+    src:url('Roslindale-DeckNarrowBold-Testing.woff') format('woff');
+    }
+    @import url('https://fonts.cdnfonts.com/css/code-saver');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Code Saver', sans-serif;
 }
 
 body {
@@ -17,7 +23,13 @@ body {
     /* Kırmızı metin */
     text-align: center;
 }
-#loading-event{
+
+#nav-logo img {
+    height: 40px;
+    width: 40px;
+}
+
+#loading-event {
     height: 100vh;
     z-index: 1000;
     text-align: center;
@@ -25,6 +37,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -34,7 +47,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     position: relative;
-    background-color: #d21919;
+    background-color: var(--red);
     /* Kırmızı arka plan */
     color: white;
 }
@@ -51,7 +64,8 @@ body {
 .nav-right a {
     text-decoration: none;
     color: white;
-    /* Beyaz yazılar */
+    cursor: pointer;
+
 }
 
 /* Hamburger Menü */
@@ -75,10 +89,9 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #d21919;
-    /* Kırmızı arka plan */
+    background: var(--red);
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
     width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -110,36 +123,72 @@ body {
 }
 
 /* Ana İçerik */
-.container {
+.landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    color: var(--red);
+
 }
 
+.landing-text{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .main-title {
     font-size: 120px;
-    font-weight: bold;
     margin-bottom: 20px;
+    font-family: 'Roslindale Deck Narrow Regular';
+    margin: 1rem 0;
 }
 
 .description {
-    font-size: 16px;
-    max-width: 600px;
-    line-height: 1.5;
+    padding: 1rem;
+    text-align: center;
+    font-size: 24px;
+    max-width: 1200px;
+    line-height: 1.6;
 }
 
-.email {
-    font-size: 18px;
-    margin-top: 15px;
-    font-weight: bold;
-}
+
 
 .email a {
     text-decoration: none;
     color: #d21919;
 }
+
+.landing-logo img {
+    height: 400px;
+}
+
+
+
+
+
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--red);
+}
+#footer h2{
+    text-transform: uppercase;
+    padding: 1rem;
+}
+#footer p{
+    font-size: 24px;
+}
+
+
 
 /* Responsive Tasarım */
 @media (max-width: 768px) {
@@ -160,5 +209,24 @@ body {
     .hamburger {
         display: flex;
         /* Hamburger butonu aktif */
+    }
+
+    .landing-logo img {
+        height: 270px;
+        transform: translateY(-100px);
+    }
+
+    .footer-title {
+        font-size: 36px;
+    }
+
+    .main-title {
+        font-size: 40px;
+        font-family: 'Roslindale Deck Narrow Regular';
+        padding: 1rem;
+    } 
+    .description{
+        font-size: 20px;
+        padding: 20px;
     }
 }
