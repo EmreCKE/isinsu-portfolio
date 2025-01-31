@@ -14,9 +14,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Code Saver', sans-serif;
-    overflow-x: hidden;
 }
-
+img{
+    overflow: hidden !important;
+}
 body {
     background-color: #fdfbf1;
     /* Açık krem arka plan */
